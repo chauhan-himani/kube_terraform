@@ -39,7 +39,7 @@ module "EKS" {
 }
 
 # create Node Group
-module "node_group" {
+module "NodeGroup" {
   source               = "../modules/NodeGroup"
   NODE_GROUP_ROLE_ARN  = module.IAM.NODE_GROUP_ROLE_ARN
   PRI_SUB3_ID          = module.VPC.PRI_SUB3_ID

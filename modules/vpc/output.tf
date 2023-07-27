@@ -18,3 +18,7 @@ output "PRI_SUB4_ID" {
 output "IGW_ID" {
     value = aws_internet_gateway.igw
 }
+
+output "REGION" {
+  value = var.REGION
+}
