@@ -41,7 +41,7 @@ module "EKS" {
 # create Node Group
 module "NodeGroup" {
   source               = "../modules/NodeGroup"
-  NODE_GROUP_ROLE_ARN  = module.IAM.NODE_GROUP_ROLE_ARN
+  NODE_GROUP_ARN  = module.IAM.NODE_GROUP_ROLE_ARN
   PRI_SUB3_ID          = module.VPC.PRI_SUB3_ID
   PRI_SUB4_ID          = module.VPC.PRI_SUB4_ID
   EKS_CLUSTER_NAME     = module.EKS.EKS_CLUSTER_NAME

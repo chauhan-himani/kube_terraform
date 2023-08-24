@@ -8,7 +8,7 @@ resource "aws_eks_node_group" "node_group" {
   node_group_name = "${var.EKS_CLUSTER_NAME}-node_group"
 
   # Amazon Resource Name (ARN) of the IAM Role that provides permissions for the EKS Node Group.
-  node_role_arn = var.NODE_GROUP_ROLE_ARN
+  node_role_arn = var.NODE_GROUP_ARN
 
   # Identifiers of EC2 Subnets to associate with the EKS Node Group. 
   # These subnets must have the following resource tag: kubernetes.io/cluster/EKS_CLUSTER_NAME 
